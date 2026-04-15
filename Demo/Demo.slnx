@@ -3,4 +3,5 @@
   <Project Path="M-002-LabLoesung/M-002-LabLoesung.csproj" />
   <Project Path="M-004-LabLoesung/M-004-LabLoesung.csproj" Id="538367c7-054b-4922-9307-27d9125c9ad1" />
   <Project Path="Tag2/Tag2.csproj" Id="c6628cfe-8d03-4636-8515-edddee8f68a8" />
+  <Project Path="Tag3/Tag3.csproj" Id="cff58eda-8e61-4c69-98df-c7567f38b7e7" />
 </Solution>

@@ -17,7 +17,7 @@
         //foreach (string name in names)
         //{ // bei jedem Durchlauf wird die Variable "name" mit dem aktuellen Element des Arrays "names" belegt
         //    Console.WriteLine(name.ToUpper());
-            
+
         //    char[] charArray = name.ToCharArray();
         //    Array.Reverse(charArray);
         //    reverseNames[i] = new string(charArray);
@@ -30,27 +30,58 @@
         //}
 
         // Enums und Switch-Case
-        Weekday today = Weekday.Tuesday;
+        //Weekday today = Weekday.Tuesday;
 
-        switch (today)
+        //switch (today)
+        //{
+        //    case Weekday.Monday:
+        //        Console.WriteLine("Wochenstart.");
+        //        break;
+        //    case Weekday.Friday:
+        //    case Weekday.Sunday:
+        //    case Weekday.Saturday:
+        //        Console.WriteLine("Wochenende.");
+        //        break;
+        //    default: 
+        //        Console.WriteLine("Wochentag.");
+        //        break;
+        //}
+
+        //// Enum Integer ansprechen
+        //Console.WriteLine((int)Weekday.Thursday); // type casten, um den Integer-Wert zu erhalten
+
+        //// Enum Element 0 ausgeben
+        //Console.WriteLine((Weekday)0);
+
+        // Methoden
+        int[] a = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        Console.WriteLine(add(a));
+        Console.WriteLine(add(new int[] {1,2,3,4,5}));
+        Console.WriteLine(add(3, 4));
+        Console.WriteLine(add(3, 4, 12, 53));
+        Console.WriteLine(add(3.1, 4));
+        string firstName = "Max";
+        string lastName = " Mustermann";
+        Console.WriteLine(add(firstName, lastName));
+    }
+
+    // Methoden überladen
+
+    static double add (double x, double y)
+    {
+        return x + y;
+    }
+     static string add (string x, string y)
+    {
+        return x + y;
+    }
+    static int add(params int[] numbers)
+    {
+        int sum = 0;
+        foreach (var item in numbers)
         {
-            case Weekday.Monday:
-                Console.WriteLine("Wochenstart.");
-                break;
-            case Weekday.Friday:
-            case Weekday.Sunday:
-            case Weekday.Saturday:
-                Console.WriteLine("Wochenende.");
-                break;
-            default: 
-                Console.WriteLine("Wochentag.");
-                break;
+            sum+=item;
         }
-
-        // Enum Integer ansprechen
-        Console.WriteLine((int)Weekday.Thursday); // type casten, um den Integer-Wert zu erhalten
-
-        // Enum Element 0 ausgeben
-        Console.WriteLine((Weekday)0);
+        return sum;
     }
 }
