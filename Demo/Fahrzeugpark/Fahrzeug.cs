@@ -3,20 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Fahrzeugpark
 {
-	public abstract class Fahrzeug
+    [XmlInclude(typeof(Flugzeug))]
+    [XmlInclude(typeof(PKW))]
+    [XmlInclude(typeof(Schiff))]
+    public abstract class Fahrzeug
 	{
 		//Properties
 		public string Name { get; set; }
 		public int MaxGeschwindigkeit { get; set; }
-		public int AktGeschwindigkeit { get; private set; }
+		public int AktGeschwindigkeit { get; set; }
 		public double Preis { get; set; }
 		public bool MotorLaeuft { get; set; }
 
-		//Konstruktor mit Übergabeparametern und Standartwerten
-		public Fahrzeug(string name, int maxG, double preis)
+		public Fahrzeug()
+		{
+			Name = "Unbekanntes Fahrzeug";
+			MaxGeschwindigkeit = 0;
+			AktGeschwindigkeit = 0;
+			Preis = 0;
+			MotorLaeuft = false;
+        }
+
+        //Konstruktor mit Übergabeparametern und Standartwerten
+        public Fahrzeug(string name, int maxG, double preis)
 		{
 			Name = name;
 			MaxGeschwindigkeit = maxG;
@@ -40,7 +53,7 @@ namespace Fahrzeugpark
 				case 2:
 					return new PKW("Auto " + name, random.Next(100, 300), random.Next(10000, 100000), random.Next(2, 5));
 				default:
-                    return new Schiff("Schiff " + name, random.Next(50, 100), random.Next(100000, 1_000_000_000), (Schiff.SchiffsTreibstoff)random.Next(0, 5));
+                    return new Schiff("Schiff " + name, random.Next(50, 100), random.Next(100000, 1_000_000_000), (Schiff.SchiffsTreibstoff)random.Next(0, 4));
 			}
         }
 

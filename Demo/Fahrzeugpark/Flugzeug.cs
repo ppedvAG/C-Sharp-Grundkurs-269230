@@ -11,7 +11,12 @@ namespace Fahrzeugpark
 	{
 		public int MaxFlughöhe { get; set; }
 
-		public Flugzeug(string name, int maxG, double preis, int maxFH) : base(name, maxG, preis)
+		public Flugzeug() : base()
+		{
+			this.MaxFlughöhe = 10000;
+        }
+
+        public Flugzeug(string name, int maxG, double preis, int maxFH) : base(name, maxG, preis)
 		{
 			this.MaxFlughöhe = maxFH;
 		}

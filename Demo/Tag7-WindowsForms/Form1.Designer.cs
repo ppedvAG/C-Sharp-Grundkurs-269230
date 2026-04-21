@@ -33,6 +33,9 @@
             lblOutput = new Label();
             btnNewVehicle = new Button();
             btnDeleteVehicle = new Button();
+            btnLoadVehicles = new Button();
+            btnSaveVehicles = new Button();
+            btnClearAll = new Button();
             SuspendLayout();
             // 
             // lstVehicles
@@ -66,7 +69,7 @@
             // 
             btnNewVehicle.Location = new Point(431, 44);
             btnNewVehicle.Name = "btnNewVehicle";
-            btnNewVehicle.Size = new Size(152, 34);
+            btnNewVehicle.Size = new Size(192, 34);
             btnNewVehicle.TabIndex = 3;
             btnNewVehicle.Text = "Neues Fahrzeug";
             btnNewVehicle.UseVisualStyleBackColor = true;
@@ -76,17 +79,50 @@
             // 
             btnDeleteVehicle.Location = new Point(431, 84);
             btnDeleteVehicle.Name = "btnDeleteVehicle";
-            btnDeleteVehicle.Size = new Size(152, 34);
+            btnDeleteVehicle.Size = new Size(192, 34);
             btnDeleteVehicle.TabIndex = 4;
             btnDeleteVehicle.Text = "Lösche Fahrzeug";
             btnDeleteVehicle.UseVisualStyleBackColor = true;
             btnDeleteVehicle.Click += btnDeleteVehicle_Click;
             // 
+            // btnLoadVehicles
+            // 
+            btnLoadVehicles.Location = new Point(431, 124);
+            btnLoadVehicles.Name = "btnLoadVehicles";
+            btnLoadVehicles.Size = new Size(192, 34);
+            btnLoadVehicles.TabIndex = 5;
+            btnLoadVehicles.Text = "Lade Fahrzeuge";
+            btnLoadVehicles.UseVisualStyleBackColor = true;
+            btnLoadVehicles.Click += btnLoadVehicles_Click;
+            // 
+            // btnSaveVehicles
+            // 
+            btnSaveVehicles.Location = new Point(431, 164);
+            btnSaveVehicles.Name = "btnSaveVehicles";
+            btnSaveVehicles.Size = new Size(192, 34);
+            btnSaveVehicles.TabIndex = 6;
+            btnSaveVehicles.Text = "Fahrzeuge speichern";
+            btnSaveVehicles.UseVisualStyleBackColor = true;
+            btnSaveVehicles.Click += btnSaveVehicles_Click;
+            // 
+            // btnClearAll
+            // 
+            btnClearAll.Location = new Point(431, 204);
+            btnClearAll.Name = "btnClearAll";
+            btnClearAll.Size = new Size(192, 34);
+            btnClearAll.TabIndex = 7;
+            btnClearAll.Text = "alle löschen";
+            btnClearAll.UseVisualStyleBackColor = true;
+            btnClearAll.Click += btnClearAll_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(591, 327);
+            ClientSize = new Size(630, 327);
+            Controls.Add(btnClearAll);
+            Controls.Add(btnSaveVehicles);
+            Controls.Add(btnLoadVehicles);
             Controls.Add(btnDeleteVehicle);
             Controls.Add(btnNewVehicle);
             Controls.Add(lblOutput);
@@ -107,5 +143,8 @@
         private Label lblOutput;
         private Button btnNewVehicle;
         private Button btnDeleteVehicle;
+        private Button btnLoadVehicles;
+        private Button btnSaveVehicles;
+        private Button btnClearAll;
     }
 }

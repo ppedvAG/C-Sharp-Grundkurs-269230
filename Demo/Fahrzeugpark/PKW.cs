@@ -10,7 +10,10 @@ namespace Fahrzeugpark
 	public class PKW : Fahrzeug
 	{
 		public int AnzahlTueren { get; set; }
-
+		public PKW(): base() 
+		{
+			this.AnzahlTueren = 4;
+        }
 		public PKW(string name, int maxG, double preis, int anzTueren) : base(name, maxG, preis)
 		{
 			this.AnzahlTueren = anzTueren;

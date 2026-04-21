@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfFahrzeug xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Fahrzeug xsi:type="Flugzeug">
+    <Name>Flugzeug 1</Name>
+    <MaxGeschwindigkeit>1718</MaxGeschwindigkeit>
+    <AktGeschwindigkeit>0</AktGeschwindigkeit>
+    <Preis>389606403</Preis>
+    <MotorLaeuft>false</MotorLaeuft>
+    <MaxFlughöhe>11352</MaxFlughöhe>
+  </Fahrzeug>
+  <Fahrzeug xsi:type="Schiff">
+    <Name>Schiff 2</Name>
+    <MaxGeschwindigkeit>72</MaxGeschwindigkeit>
+    <AktGeschwindigkeit>0</AktGeschwindigkeit>
+    <Preis>100375573</Preis>
+    <MotorLaeuft>false</MotorLaeuft>
+    <Treibstoff>Dampf</Treibstoff>
+  </Fahrzeug>
+  <Fahrzeug xsi:type="Schiff">
+    <Name>Schiff 3</Name>
+    <MaxGeschwindigkeit>79</MaxGeschwindigkeit>
+    <AktGeschwindigkeit>0</AktGeschwindigkeit>
+    <Preis>551249515</Preis>
+    <MotorLaeuft>false</MotorLaeuft>
+    <Treibstoff>Muskelkraft</Treibstoff>
+  </Fahrzeug>
+  <Fahrzeug xsi:type="Schiff">
+    <Name>Schiff 4</Name>
+    <MaxGeschwindigkeit>51</MaxGeschwindigkeit>
+    <AktGeschwindigkeit>0</AktGeschwindigkeit>
+    <Preis>811953701</Preis>
+    <MotorLaeuft>false</MotorLaeuft>
+    <Treibstoff>Dampf</Treibstoff>
+  </Fahrzeug>
+  <Fahrzeug xsi:type="PKW">
+    <Name>Auto 5</Name>
+    <MaxGeschwindigkeit>235</MaxGeschwindigkeit>
+    <AktGeschwindigkeit>0</AktGeschwindigkeit>
+    <Preis>56693</Preis>
+    <MotorLaeuft>false</MotorLaeuft>
+    <AnzahlTueren>4</AnzahlTueren>
+  </Fahrzeug>
+  <Fahrzeug xsi:type="PKW">
+    <Name>Auto 6</Name>
+    <MaxGeschwindigkeit>124</MaxGeschwindigkeit>
+    <AktGeschwindigkeit>0</AktGeschwindigkeit>
+    <Preis>87278</Preis>
+    <MotorLaeuft>false</MotorLaeuft>
+    <AnzahlTueren>2</AnzahlTueren>
+  </Fahrzeug>
+  <Fahrzeug xsi:type="Flugzeug">
+    <Name>Flugzeug 7</Name>
+    <MaxGeschwindigkeit>337</MaxGeschwindigkeit>
+    <AktGeschwindigkeit>0</AktGeschwindigkeit>
+    <Preis>897248845</Preis>
+    <MotorLaeuft>false</MotorLaeuft>
+    <MaxFlughöhe>14318</MaxFlughöhe>
+  </Fahrzeug>
+</ArrayOfFahrzeug>

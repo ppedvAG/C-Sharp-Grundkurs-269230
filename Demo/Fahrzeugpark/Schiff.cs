@@ -15,6 +15,11 @@ namespace Fahrzeugpark
 		//Klasseneigene Property
 		public SchiffsTreibstoff Treibstoff { get; set; }
 
+		public Schiff(): base()
+		{
+			this.Treibstoff = SchiffsTreibstoff.Diesel;
+        }
+
 		//Konstruktor mit Bezug auf den Konstruktor der Mutterklasse (base)
 		public Schiff(string name, int maxG, double preis, SchiffsTreibstoff treibstoff) : base(name, maxG, preis)
 		{
